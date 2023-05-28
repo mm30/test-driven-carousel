@@ -1,0 +1,13 @@
+Why put the Jest setup file in the /tests directory? 
+Although the Jest setup file isn't a test file, it des run in the same environment as the test files. 
+That means that it should follow the Jest-specific linter rules defined in src/tests/.eslintrc.js
+
+At this point, the setup file satisfies either set of linter rules, but that could change if the test setup grows more elaborate.
+
+It's always useful to remember which environment each JavaScript file in your project 
+runs in, and to keep it in a directory with an appropriate ESLint configuration.
+Ideally, we'd move jest.config.js and wallaby.js into a more precisely configured directory, but (as of 2018) 
+Jest and Wallaby expect those files to live in the project root.
+
+- Note -
+With the jest setup file in place, we no longer need to run Enzyme's configure() method in each test file.

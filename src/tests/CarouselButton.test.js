@@ -1,11 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
-import {configure, shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
+import { shallow } from 'enzyme';
 // eslint-disable-next-line no-unused-vars
 import CarouselButton from '../CarouselButton';
-
-configure({ adapter: new Adapter() });
 
 describe( 'CarouselButton', () => {
   const text = 'Button text';
