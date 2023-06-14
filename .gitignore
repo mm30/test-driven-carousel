@@ -1,4 +1,3 @@
 node_modules/
 .vscode/
-dist/index.html
 npx_jest_watchall_flag.txt

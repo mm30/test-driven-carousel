@@ -7,17 +7,16 @@ module.exports = {
         example: './example/index.js',
     },
     plugins: [
-        new HtmlWebpackPlugin({
-            title: 'Carousel Example',
-            chunks: ['example'],
-        }),
+      new HtmlWebpackPlugin({
+        title: 'Carousel Example',
+        chunks: ['example'],
+      }),
     ],
     module: {
-        rules: [
-            {
-                test: /|.js$/,
-                loader: require.resolve('babel-loader'),
-            },
-        ],
+      rules: [
+        {
+          test: /|.js$/,
+          loader: require.resolve('babel-loader') },
+      ],
     },
 };
