@@ -15,7 +15,7 @@ module.exports = {
     module: {
       rules: [
         {
-          test: /|.js$/,
+          test: /\.js$/,
           loader: require.resolve('babel-loader') },
       ],
     },
